@@ -52,12 +52,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Vendor Registraion Form</h4>
+                                <h4 class="mb-sm-0">Vendor Registration Form</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                        <li class="breadcrumb-item active">Vendor Registraion Form</li>
+                                        <li class="breadcrumb-item active">Vendor Registration Form</li>
                                     </ol>
                                 </div>
 
@@ -277,20 +277,25 @@
                                 </div>
 
                                 <div class="card-body">
-                                     <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title mb-0">Required Documents (Upload as Images in a ZIP file):</h4>
-                                        </div><!-- end card header -->
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title mb-0">Required Documents (Upload as Images in a
+                                                    ZIP file):</h4>
+                                            </div><!-- end card header -->
 
-                                        <div class="card-body">
-                                            <p class="text-muted">Upload clear images of PAN, GST, Aadhaar, cancelled cheque, address proof, registration & work docs in a single ZIP under 5MB with no cropped edges.</p>
-                                            <input type="file" class="filepond filepond-input-multiple" multiple name="filepond" data-allow-reorder="true" data-max-file-size="3MB" data-max-files="3">
+                                            <div class="card-body">
+                                                <p class="text-muted">Upload clear images of PAN, GST, Aadhaar,
+                                                    cancelled cheque, address proof, registration & work docs in a
+                                                    single ZIP under 5MB with no cropped edges.</p>
+                                                <input type="file" class="filepond filepond-input-multiple" multiple
+                                                    name="filepond" data-allow-reorder="true" data-max-file-size="3MB"
+                                                    data-max-files="3">
+                                            </div>
+                                            <!-- end card body -->
                                         </div>
-                                        <!-- end card body -->
-                                    </div>
-                                    <!-- end card -->
-                                </div> <!-- end col -->
+                                        <!-- end card -->
+                                    </div> <!-- end col -->
                                 </div>
 
                             </div><!-- end card -->
@@ -299,27 +304,16 @@
                     </div>
                     <!-- end row -->
 
-                   <center> <button class="btn btn-primary">Submit</button></center>
+                    <center> <button class="btn btn-primary">Submit</button></center>
 
                 </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Bridge House.
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by Auctech Marcom
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <div id="footer">
+                <script>$('#footer').load('footer.html')</script>
+            </div>
         </div>
         <!-- end main content-->
 
@@ -344,7 +338,7 @@
     </div>
 
 
- 
+
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>

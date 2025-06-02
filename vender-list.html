@@ -67,10 +67,12 @@
 
                                                         <!--end col-->
                                                         <div class="col-auto">
-                                                            <button type="button" class="btn btn-soft-success"><i
-                                                                    class="ri-add-circle-line align-middle me-1"></i>
-                                                                <a href="vendorregistraion.html"> Add
-                                                                    Vendor</a></button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                <a class="text-light" href="vendorregistraion.html">
+                                                                    <i class="ri-add-circle-line align-middle me-1"></i>
+                                                                     Add Vendor
+                                                                </a>
+                                                            </button>
                                                         </div>
 
 
@@ -98,7 +100,7 @@
                                                 <ol class="breadcrumb m-0">
                                                     <li class="breadcrumb-item"><a
                                                             href="javascript: void(0);">Dashboard</a></li>
-                                                    <li class="breadcrumb-item active">Vendor Registraion Form</li>
+                                                    <li class="breadcrumb-item active">Vendor List</li>
                                                 </ol>
                                             </div>
 
@@ -117,7 +119,11 @@
                                         <div class="card">
                                             <div class="card-header align-items-center d-flex">
                                                 <h4 class="card-title mb-0 flex-grow-1">All Vendors List</h4>
-
+                                                <div>
+                                                    <label for="">Date Filter</label>
+                                                    <input placeholder="Service/Product Title" type="date"
+                                                        class="form-control" id="">
+                                                </div>
                                             </div><!-- end card header -->
 
                                             <div class="card-body">
@@ -138,7 +144,8 @@
                                                                 <tr>
 
                                                                     <td>1</td>
-                                                                    <th scope="row"><a href="vendor\vendor-dashboard.html"
+                                                                    <th scope="row"><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="fw-medium">BH-ANA-01</a>
                                                                     </th>
                                                                     <td>
@@ -150,7 +157,9 @@
                                                                                     style="background-color: black;" />
                                                                             </div>
                                                                             <div>
-                                                                                <h5 class="fs-14 my-1"><a href="vendor\vendor-dashboard.html"
+                                                                                <h5 class="fs-14 my-1"><a
+                                                                                        target="_blank"
+                                                                                        href="vendor\vendor-dashboard.html"
                                                                                         class="text-reset">Ananjeet
                                                                                         Infra</a></h5>
                                                                                 <span class="text-muted">20 May
@@ -159,7 +168,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>Real Estate</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -189,7 +199,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>Real Estate</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -219,7 +230,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>Real Estate Software</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -249,7 +261,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>I.T Softwares</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -279,7 +292,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>Real Estate</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -307,7 +321,8 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>Real Estate</td>
-                                                                    <td><a href="vendor\vendor-dashboard.html"
+                                                                    <td><a target="_blank"
+                                                                            href="vendor\vendor-dashboard.html"
                                                                             class="link-success">View More <i
                                                                                 class="ri-arrow-right-line align-middle"></i></a>
                                                                     </td>
@@ -374,20 +389,9 @@
             </div>
             <!-- End Page-content -->
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Bridge House.
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by Auctech Marcom
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <div id="footer">
+                <script>$('#footer').load('footer.html')</script>
+            </div>
         </div>
         <!-- end main content-->
 
