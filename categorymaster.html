@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="light" data-topbar="dark"
+    data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Bridge House | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Bridge House" name="description" />
+    <meta content="Bridge House" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="BridgeHouselogo.png">
+
+    <link href="assets/libs/jsvectormap/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div id="header">
+            <script>$('#header').load('header.html')</script>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Category Master Form</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                                        <li class="breadcrumb-item active">Basic Elements</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12" style="padding: 2%;">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-6 col-md-6">
+                                                <label for="labelInput" class="form-label">Select Industry</label>
+                                                <select class="form-select form-select-md"
+                                                    aria-label=".form-select-lg example">
+                                                    <option selected>Select</option>
+                                                    <option value="1">Real Estate</option>
+                                                    <option value="2">Software Development</option>
+                                                    <option value="3">Finance</option>
+                                                </select>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-6 col-md-6">
+                                                <div>
+                                                    <label for="labelInput" class="form-label">Add Categories</label>
+                                                    <input type="text" class="form-control" id="labelInput">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+
+                                            <div>
+                                                <center><button class="btn btn-success">Add</button></center>
+                                            </div>
+
+
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="card">
+
+
+                                    <div class="card-body">
+                                        <p class="text-muted">List of <code>Business Categories</code> in the Bridge
+                                            House Product and Service CRM</p>
+                                        <div class="live-preview">
+                                            <div class="table-responsive">
+                                                <table class="table align-middle table-nowrap mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">S.No</th>
+                                                            <th scope="col">Category ID</th>
+                                                            <th scope="col">Category Name</th>
+                                                            <th scope="col">Industry Name</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            </th>
+                                                            <th scope="row"><a href="#" class="fw-medium">BH-0001</a>
+                                                            </th>
+                                                            <td>Row Houses</td>
+                                                            <td>Real Estate</td>
+                                                            <td><i
+                                                                    class="ri-checkbox-circle-line align-middle text-success"></i>
+                                                                Active</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a href="#" role="button" id="dropdownMenuLink1"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="ri-more-2-fill"></i>
+                                                                    </a>
+
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink1">
+                                                                        <li><a class="dropdown-item" href="#">View</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Deactivate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            </th>
+                                                            <th scope="row"><a href="#" class="fw-medium">BH-0002</a>
+                                                            </th>
+                                                            <td>Villa</td>
+                                                            <td>Real Estate</td>
+                                                            <td><i
+                                                                    class="ri-checkbox-circle-line align-middle text-success"></i>
+                                                                Active</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a href="#" role="button" id="dropdownMenuLink1"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="ri-more-2-fill"></i>
+                                                                    </a>
+
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink1">
+                                                                        <li><a class="dropdown-item" href="#">View</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Deactivate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>3</td>
+                                                            </th>
+                                                            <th scope="row"><a href="#" class="fw-medium">BH-0003</a>
+                                                            </th>
+                                                            <td>Apartment</td>
+                                                            <td>Real Estate</td>
+                                                            <td><i
+                                                                    class="ri-checkbox-circle-line align-middle text-success"></i>
+                                                                Active</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a href="#" role="button" id="dropdownMenuLink1"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="ri-more-2-fill"></i>
+                                                                    </a>
+
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink1">
+                                                                        <li><a class="dropdown-item" href="#">View</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Deactivate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>4</td>
+                                                            </th>
+                                                            <th scope="row"><a href="#" class="fw-medium">BH-0004</a>
+                                                            </th>
+                                                            <td>Website & App Development</td>
+                                                            <td>IT</td>
+                                                            <td><i
+                                                                    class="ri-close-circle-line align-middle text-danger"></i>
+                                                                Deactive</td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <a href="#" role="button" id="dropdownMenuLink1"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <i class="ri-more-2-fill"></i>
+                                                                    </a>
+
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink1">
+                                                                        <li><a class="dropdown-item" href="#">View</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Deactivate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-none code-view">
+                                            <pre class="language-markup" style="height: 275px;"><code>&lt;table class=&quot;table table-nowrap&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;ID&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Customer&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Date&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Invoice&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Action&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fw-semibold&quot;&gt;BH-2110&lt;/a&gt;&lt;/th&gt;
+            &lt;td&gt;Bobby Davis&lt;/td&gt;
+            &lt;td&gt;October 15, 2021&lt;/td&gt;
+            &lt;td&gt;$2,300&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-success&quot;&gt;View More &lt;i class=&quot;ri-arrow-right-line align-middle&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fw-semibold&quot;&gt;BH-2109&lt;/a&gt;&lt;/th&gt;
+            &lt;td&gt;Christopher Neal&lt;/td&gt;
+            &lt;td&gt;October 7, 2021&lt;/td&gt;
+            &lt;td&gt;$5,500&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-success&quot;&gt;View More &lt;i class=&quot;ri-arrow-right-line align-middle&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fw-semibold&quot;&gt;BH-2108&lt;/a&gt;&lt;/th&gt;
+            &lt;td&gt;Monkey Karry&lt;/td&gt;
+            &lt;td&gt;October 5, 2021&lt;/td&gt;
+            &lt;td&gt;$2,420&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-success&quot;&gt;View More &lt;i class=&quot;ri-arrow-right-line align-middle&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fw-semibold&quot;&gt;BH-2107&lt;/a&gt;&lt;/th&gt;
+            &lt;td&gt;James White&lt;/td&gt;
+            &lt;td&gt;October 2, 2021&lt;/td&gt;
+            &lt;td&gt;$7,452&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-success&quot;&gt;View More &lt;i class=&quot;ri-arrow-right-line align-middle&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div>
+
+                        </div>
+                        <!--end col-->
+                    </div>
+
+
+
+                </div> <!-- container-fluid -->
+            </div><!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+
+
+</html>
